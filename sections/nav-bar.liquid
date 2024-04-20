@@ -1,0 +1,104 @@
+{%- style -%} 
+.navbar {
+    display: flex;
+    overflow: hidden;
+    background-color: {{ section.settings.background }};
+    color: {{ section.settings.text_color }};
+    justify-content: center;
+}
+
+.navbar-center{
+    display:flex;
+    justify-content: center;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: {{ section.settings.text_color }};
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* 
+.subnav {
+    float: left;
+    overflow: hidden;
+    display: flex;
+} */
+
+.subnav .subnav-link {
+    display: block;
+    color: {{ section.settings.text_color }};
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav-content {
+    position: absolute;
+    background-color: white;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    top: 70px;
+    border-bottom: 1px solid #ccc;
+    opacity: 0;
+}
+
+.subnav-content a {
+  color:black;
+}
+.subnav:hover .subnav-content {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+} 
+{%- endstyle -%}
+
+<div class="navbar">
+    <div class="navbar-left-image">
+
+    </div>
+    <div class="navbar-center">
+        <div class="subnav">
+            <a href="#" class="subnav-link">About</a>
+            <div class="subnav-content">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Careers</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <a href="#" class="subnav-link">Services</a>
+            <div class="subnav-content">
+                <a href="#">Hi</a>
+                <a href="#">Hhehe</a>
+                <a href="#">Hi</a>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-right">
+
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "Navigation link",
+      "class": "navigation-link",
+      "settings": [
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color",
+          "default": "#FFFFFF"
+        }
+      ]
+    }
+{% endschema %}

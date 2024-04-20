@@ -1,0 +1,69 @@
+ {{ 'announcement-bar.css' | asset_url | stylesheet_tag }}
+
+{%- style -%} 
+  .annoucement-bar-text {
+    color: {{ section.settings.announcement_text_color}};
+    padding-right: 5px;
+    font-family: {{ section.settings.announcement_font }};
+  }
+  .annoucement-bar-link {
+    color: {{ section.settings.announcement_text_color}};
+    text-decoration: none;
+    font-weight: bold;
+    font-family: {{ section.settings.announcement_font }};
+  }
+ {%- endstyle -%}
+ 
+  {%- if section.settings.announcement_text != blank %}
+      <span class="annoucement-bar-text">{{ section.settings.announcement_text }}</span> 
+  {%- endif -%}
+  {%- if section.settings.announcement_link != blank -%}
+      <a class="annoucement-bar-link" href="{{ section.settings.announcement_link_url }}">{{ section.settings.announcement_link }}</a>
+  {%- endif -%}
+
+{% schema %}
+  {
+    "name": "Announcement bar",
+    "class": "announcement-bar-wrapper",
+    "settings": [
+      {
+        "type": "text",
+        "id": "announcement_text",
+        "label": "Announcement text",
+        "default":  "PROFESSIONAL SHIPPING WORLDWIDE.",
+        "info": "This text will be displayed in the announcement bar"
+      },
+      {
+        "type": "color",
+        "id": "announcement_text_color",
+        "label": "Text color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "announcement_link",
+        "label": "Announcement link",
+        "default":  "FREE RETURNS WITHIN 1 YEAR.",
+        "info": "This text link will be displayed in the announcement bar"
+      },
+      {
+        "type": "text",
+        "id": "announcement_link_url",
+        "label": "Link URL",
+        "info": "This link will be displayed in the announcement bar"
+      },
+      {
+        "type": "color",
+        "id": "announcement_link_color",
+        "label": "Link color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "font_picker",
+        "id": "announcement_font",
+        "label": "Font",
+        "default": "sans-serif"
+      }
+    ]
+  }
+ {% endschema %}

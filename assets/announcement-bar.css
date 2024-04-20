@@ -1,0 +1,7 @@
+.announcement-bar-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #201F1E;
+    font-size: 13px;
+  }

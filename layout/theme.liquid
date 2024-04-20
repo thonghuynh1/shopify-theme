@@ -1,0 +1,26 @@
+<html>
+<head>
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
+    
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+</head>
+<body>
+    <main id="main" role="main">
+        {{ content_for_layout }}
+    </main>
+    
+    <footer>
+        <nav>
+            {% for link in linklists.footer.links %}
+                <a href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+        </nav>
+        
+        <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}</p>
+    </footer>
+</body>
+</html>

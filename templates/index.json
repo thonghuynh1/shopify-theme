@@ -1,0 +1,17 @@
+{
+    "sections": {
+        "announcement-bar": {
+            "type": "announcement-bar",
+            "settings": {}
+        },
+        "navigation-bar": {
+            "type": "nav-bar",
+            "settings": {}
+        },
+        "slideshow": {
+            "type": "slideshow",
+            "settings": {}
+        }
+    },
+    "order": ["announcement-bar", "navigation-bar","slideshow"]
+}

@@ -1,0 +1,53 @@
+{
+  "current": "Default",
+  "presets": {
+    "Default": {
+      "color_schemes": {
+        "scheme-1": {
+          "settings": {
+            "background": "#201F1E",
+            "background_gradient": "",
+            "text": "#FAFAFA",
+            "button": "#201F1E",
+            "button_label": "#D5A770"
+          }
+        },
+        "scheme-2": {
+          "settings": {
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#201F1E",
+            "button_label": "#FFFFFF"
+      
+          }
+        },
+        "scheme-3": {
+          "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#000000"
+          }
+        },
+        "scheme-4": {
+          "settings": {
+            "background": "#121212",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#121212"
+          }
+        }
+      },
+      "buttons_border_thickness": 1,
+      "buttons_border_opacity": 100,
+      "buttons_radius": 0,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 4,
+      "buttons_shadow_blur": 5
+    }
+  }
+}

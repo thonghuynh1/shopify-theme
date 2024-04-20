@@ -8,10 +8,10 @@
             "type": "nav-bar",
             "settings": {}
         },
-        "slideshow": {
-            "type": "slideshow",
+        "sille": {
+            "type": "sille",
             "settings": {}
         }
     },
-    "order": ["announcement-bar", "navigation-bar", "slideshow"]
+    "order": ["announcement-bar", "navigation-bar", "sille"]
 }

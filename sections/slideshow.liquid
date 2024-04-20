@@ -8,7 +8,7 @@
                 <div class="slide-img">
                     {%- if block.settings.image -%}
                         {%- liquid 
-                        assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
+                        assign height = '100%'
                         assign sizes = '100vw'
                         assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
                         assign fetch_priority = 'auto'

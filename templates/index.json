@@ -13,5 +13,5 @@
             "settings": {}
         }
     },
-    "order": ["announcement-bar", "navigation-bar","slideshow"]
+    "order": ["announcement-bar", "navigation-bar", "slideshow"]
 }

@@ -8,9 +8,9 @@
                 <div class="slide-img">
                     {%- if block.settings.image -%}
                         {%- liquid 
-                        assign height = '550'
+                        assign height = '100%'
                         assign sizes = '100vw'
-                        assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                        assign widths = '100%'
                         assign fetch_priority = 'auto'
                         if section.index == 1
                           assign fetch_priority = 'high'
